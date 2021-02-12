@@ -8,12 +8,18 @@ import { AppRoutingModule } from './app-routing.module';
 // Components :start
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AppHeaderComponent } from './layout/app-header/app-header.component';
+import { AppFooterComponent } from './layout/app-footer/app-footer.component';
+import { QuotationComponent } from './quotation/quotation.component';
 // Components :end
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    AppHeaderComponent,
+    AppFooterComponent,
+    QuotationComponent
   ],
   imports: [
     BrowserModule,
