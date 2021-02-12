@@ -9,13 +9,13 @@ export class DashboardService {
   constructor(private http:HttpClient) { }
 
    // Private properties :start
-    apiUrl:string ='https://jsonplaceholder.typicode.com/';
+    apiUrl:string ='https://jsonplaceholder.typicode.com';
    // Private properties :end
    // REST METHODS :start
 
      // GET
       get() {
-        return this.http.get('users');
+        return this.http.get(this.apiUrl+'/users');
       }
      // POST
 
