@@ -18,7 +18,9 @@ export class DashboardService {
         return this.http.get(this.apiUrl+'/users');
       }
      // POST
-
+      post() {
+        return this.http.post(this.apiUrl+'/users',{body:{'hello':'world'}});
+      }
      // PUT
 
      // DELETE
